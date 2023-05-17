@@ -7,7 +7,7 @@
     <title>Blog Hasan | about</title>
 </head>
 <body>
-    <h1>Halaman About ubah</h1>
+    <h1>Halaman About</h1>
     <p>@php
         echo $nama;
     @endphp
