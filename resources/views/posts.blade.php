@@ -3,17 +3,17 @@
 @section('container')
     @foreach ($posts as $post)
         <article class="mb-5">
-            <a href="/posts/{{ $post["slug"] }}">
+            <a href="/posts/{{ $post->slug }}">
                 <h2>
-                    {{ $post["title"] }}
+                    {{ $post->title }}
                     
                 </h2>
             </a>
             <h5>
-                {{ $post["author"] }}
+                {{ $post->author }}
             </h5>
             <p>
-                {{ $post["body"] }}
+                {{ $post->excerpt }}
             </p>
         </article>
     @endforeach
