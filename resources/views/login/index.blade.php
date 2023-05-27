@@ -18,14 +18,13 @@
       @csrf
       <h1 class="h3 mb-3 fw-normal">Please Login</h1>
       <div class="form-floating">
-        <input type="text" name="login" class="form-control @error ('login') is-invalid  @enderror"
-                    id="login" placeholder="Email or Username" autofocus required value="{{ old('login') }}">
-                <label for="login">Email or Username</label>
-                @error('login')
-                    <div class="invalid-feedback">
-                        {{ $message }}
-                    </div>
-                @enderror
+        <input type="text" name="login" class="form-control @error ('login') is-invalid  @enderror" id="login" placeholder="Email or Username" autofocus required value="{{ old('login') }}">
+        <label for="login">Email or Username</label>
+        @error('login')
+            <div class="invalid-feedback">
+                {{ $message }}
+            </div>
+        @enderror
       </div>
       <div class="form-floating">
         <input type="password" name="password" class="form-control" id="password" placeholder="Password" required>
